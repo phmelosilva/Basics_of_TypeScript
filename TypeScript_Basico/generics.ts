@@ -15,7 +15,6 @@ const returnPromise = async (): Promise<number> => {
     return 5;
 }
 
-
 // Classes
 class GenericNumber<T> {
     zeroValue: T
