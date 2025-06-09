@@ -2,14 +2,15 @@ POST http://localhost:8000/videos
 Content-Type: application/json
 
 {
-    "title": "Video 01",
+    "title": "Video node",
     "description": "Primeiro video",
     "duration": 180
 }
 
 ###
 
-GET http://localhost:8000/videos
+GET http://localhost:8000/videos?search=node
+# GET http://localhost:8000/videos
 
 ###
 PUT http://localhost:8000/videos/6318b4a2-0bc0-4d14-afb8-762a8323114d

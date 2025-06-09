@@ -41,8 +41,10 @@ server.post('/videos', (request, reply) => {
     return reply.status(201).send(); 
 })
 
-server.get('/videos', () => {
-    const videos = database.list()
+server.get('/videos', (request) => {
+    const search = request.query.search;
+
+    const videos = database.list(search)
 
     // return reply.status(); -> Fastify entende o return abaixo igual esse
     return videos;
